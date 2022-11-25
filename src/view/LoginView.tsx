@@ -32,7 +32,7 @@ export default function LoginView() {
                             <p className="ml-[9px]">{ethereum}</p>
                         </div>
                         <div className="flex flex-row items-center justify-start w-[509px] h-[65px] mt-[20px] bg-[#EFEFEF] rounded-[46px]" >
-                            <input className="outline-none border-none bg-transparent ml-[29px] placeholder:text-[#999999] placeholder:text-[14px] placeholder:font-[400]" placeholder={placeholder_wallet_input}></input>
+                            <input className="outline-none border-none bg-transparent ml-[29px] mr-[29px] placeholder:text-[#999999] placeholder:text-[14px] placeholder:font-[400] w-[100%]" placeholder={placeholder_wallet_input}></input>
                         </div>
                         <Link to={"/main"} className="w-[509px] h-[65px] flex flex-col items-center justify-center rounded-[46px] bg-[#1D7DEA] text-[#F4F4F4] mt-[54px]">
                             {connect_to_wallet}

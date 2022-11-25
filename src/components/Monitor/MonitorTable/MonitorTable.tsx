@@ -38,7 +38,7 @@ const digitalAssets: DigitalAsset[] = [
 
 ]
 
-export default function MonitorTable() {
+export default function MonitorTable(props: { showRiskDetails: (isActive: boolean) => void }) {
 
     return (
         <div className="z-[1] rounded-[5px] shadow overflow-hidden">
@@ -46,7 +46,7 @@ export default function MonitorTable() {
                 {columnsHeaders.map((name, key) => { return (<ColumnHeader name={name} key={key} />) })}
             </div>
             <div className="flex flex-col items-center justify-start">
-                {digitalAssets.map((digitalAsset, key) => { return (<TableRow digitalAsset={digitalAsset} key={key} index={key} />) })}
+                {digitalAssets.map((digitalAsset, key) => { return (<TableRow showRiskDetails={props.showRiskDetails} digitalAsset={digitalAsset} key={key} index={key} />) })}
             </div>
         </div>
     )
