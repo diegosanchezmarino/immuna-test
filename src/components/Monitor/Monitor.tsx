@@ -14,8 +14,6 @@ export default function Monitor() {
         setModalActive(isActive)
     }
 
-
-    console.log(isModalActive)
     return (
         <div className="flex flex-col flex-[1] w-[100%] z-[0] bg-[#F8F8F8] relative">
             <div className="flex flex-col flex-[1] pr-[20px] pl-[20px]">

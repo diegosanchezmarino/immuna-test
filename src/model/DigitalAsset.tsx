@@ -4,5 +4,6 @@ export interface DigitalAsset {
     address: string,
     protocol: string,
     balance: string,
-    riskStatus: RiskStatus
+    riskStatus: RiskStatus,
+    icon: string
 }
