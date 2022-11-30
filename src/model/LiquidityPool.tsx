@@ -1,6 +1,6 @@
 export type RiskStatus = "Green" | "Red" | "Yellow"
 
-export interface DigitalAsset {
+export interface LiquidityPool {
     address: string,
     protocol: string,
     balance: string,
