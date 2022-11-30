@@ -1,5 +1,5 @@
 import { green, red, yellow } from "../../../../../assets/strings";
-import { RiskStatus } from "../../../../../model/DigitalAsset";
+import { RiskStatus } from "../../../../../model/LiquidityPool";
 
 export default function RiskStatusBadge(props: { riskStatus: RiskStatus, badgeClicked?: (() => void) }) {
 
